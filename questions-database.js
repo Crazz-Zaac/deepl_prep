@@ -1004,7 +1004,603 @@ const questionsDatabase = {
       "question": "MC Q100: Which techniques are used to compress and encode image features into a lower-dimensional space?",
       "options": ["Autoencoders", "PCA", "t-SNE", "Clustering"],
       "answer": ["Autoencoders", "PCA", "t-SNE"]
-    }
+    },
+    {
+      "question": "MC Q101: What is the correct order of steps to train a neural network using the backpropagation algorithm and an optimizer like Stochastic Gradient Descent (SGD)?",
+      "options": [
+        "D → B → C → A → E",
+        "D → C → A → E → B",
+        "D → A → C → E → B",
+        "D → E → A → B → C",
+        "D → B → E → C → A"
+      ],
+      "answer": ["D → C → A → E → B"]
+    },
+    {
+      "question": "MC Q102: Which of the following statements are true regarding the Batch Normalization layer?",
+      "options": [
+        "It normalizes the distribution of the input for the layer which follows the Batch Normalization layer",
+        "It normalizes the weights of each layer",
+        "It is an effective way of back-propagation",
+        "It can normalize the complete training dataset by computing the global mean and variance",
+        "It has trainable parameters"
+      ],
+      "answer": [
+        "It normalizes the distribution of the input for the layer which follows the Batch Normalization layer",
+        "It can normalize the complete training dataset by computing the global mean and variance",
+        "It has trainable parameters"
+      ]
+    },
+    {
+      "question": "MC Q103: Suppose you have a model trained on the ImageNet dataset for a classification task. Then you feed the model a blank image where every pixel is the same white color. For this input, the network will output the same score for each class. This statement is:",
+      "options": [
+        "True",
+        "Cannot be answered",
+        "False"
+      ],
+      "answer": ["True"]
+    },
+    {
+      "question": "MC Q104: Which of the following functions do/does not fulfill the requirements for an activation function to train a deep learning model?",
+      "options": [
+        "tanh(x)",
+        "1/x",
+        "2x",
+        "max(x, 0)",
+        "1/(1+e^{-x})"
+      ],
+      "answer": ["1/x", "2x"]
+    },
+    {
+      "question": "MC Q105: Which of the following statement(s) is/are wrong?",
+      "options": [
+        "The goal of a good policy is to maximize the future return",
+        "The Bellman equations form a system of linear equations which can be solved for small problems",
+        "Q Learning is an Off-policy method that does not need information about dynamics of the environment",
+        "Temporal Difference Learning is an On-policy method that needs information about dynamics of the environment",
+        "Greedy action selection policy is not always the best policy"
+      ],
+      "answer": ["Temporal Difference Learning is an On-policy method that needs information about dynamics of the environment"]
+    },
+    {
+      "question": "MC Q106: Which of the following statements about the model capacity is/are true?",
+      "options": [
+        "The model capacity is determined by the number of training samples the network was optimized with",
+        "The model capacity is linked to the variety of functions which can be approximated",
+        "The model capacity is influenced by the depth of a network",
+        "The tradeoff between bias and variance is closely related to the model capacity",
+        "The bias in prediction necessarily increases when the model capacity increases as well"
+      ],
+      "answer": [
+        "The model capacity is linked to the variety of functions which can be approximated",
+        "The model capacity is influenced by the depth of a network",
+        "The tradeoff between bias and variance is closely related to the model capacity"
+      ]
+    },
+    {
+      "question": "MC Q107: Which statement(s) is/are true about initializing your weights and biases?",
+      "options": [
+        "If the bias is initialized with 0, the gradient of the loss with respect to the bias is 0 as well",
+        "Initializing your bias with 0 helps with the dying ReLU problem",
+        "It is important to calibrate the variance of your weights",
+        "Initialization does matter because the optimization of a Deep Learning model is a convex problem"
+      ],
+      "answer": ["It is important to calibrate the variance of your weights"]
+    },
+    {
+      "question": "MC Q108: Which of the following statement is/are true regarding segmentation?",
+      "options": [
+        "The goal of segmentation is to draw a bounding box which contains the desired object",
+        "Semantic segmentation can be considered as a pixel-wise classification",
+        "A pixel-wise segmentation of an object can be converted into a bounding box",
+        "Instance segmentation can only find one instance of a class per image"
+      ],
+      "answer": [
+        "Semantic segmentation can be considered as a pixel-wise classification",
+        "A pixel-wise segmentation of an object can be converted into a bounding box"
+      ]
+    },
+    {
+      "question": "MC Q101: Which of the following techniques is NOT a common practice to tackle class imbalance?",
+      "options": ["Weighting loss with inverse class frequency", "Data augmentation", "Oversampling", "Batch normalization"],
+      "answer": ["Batch normalization"]
+    },
+    {
+      "question": "MC Q102: What is ensembling in the context of deep learning?",
+      "options": ["A visualization technique with occlusion", "A network with multiple outputs", "Parallel paths with different kernel sizes", "Multiple networks with majority vote"],
+      "answer": ["Multiple networks with majority vote"]
+    },
+    {
+      "question": "MC Q103: Which option can be used to create synthetic data samples?",
+      "options": ["The discriminator of a GAN", "The encoder of a Variational Autoencoder", "The decoder of a Variational Autoencoder", "The encoder of a GAN"],
+      "answer": ["The decoder of a Variational Autoencoder"]
+    },
+    {
+      "question": "MC Q104: Which of the following sampling strategies does NOT exist for sequence generation in RNNs?",
+      "options": ["Greedy sampling", "Beam sampling", "Recognition sampling", "Random sampling"],
+      "answer": ["Recognition sampling"]
+    },
+    {
+      "question": "MC Q105: Which statement is false when implementing a Convolutional layer?",
+      "options": ["The number of kernels determines the number of output channels", "Stride greater than one reduces the image size", "A 'valid' convolution outputs an image of the same size as its input", "The number of parameters in a kernel is independent of the image size"],
+      "answer": ["A 'valid' convolution outputs an image of the same size as its input"]
+    },
+    {
+      "question": "MC Q106: Why does initialization matter for the optimization of deep neural networks?",
+      "options": ["Because the problem is non-convex", "To reduce the number of parameters", "To ensure convergence to the same local minimum", "To quickly find the steepest gradient"],
+      "answer": ["Because the problem is non-convex"]
+    },
+    {
+      "question": "MC Q107: What is the main task of Object Detection?",
+      "options": ["Finding bounding boxes and classifying objects", "Searching for boundaries between objects", "Increasing image resolution", "Filling in missing image parts"],
+      "answer": ["Finding bounding boxes and classifying objects"]
+    },
+    {
+      "question": "MC Q108: Which statement about YOLO and Fast R-CNN is true?",
+      "options": ["YOLO produces many object proposals for the CNN", "YOLO combines bounding box prediction and classification in one network", "Fast R-CNN is generally faster than YOLO", "Fast R-CNN can perform real-time detection"],
+      "answer": ["YOLO combines bounding box prediction and classification in one network"]
+    },
+    {
+      "question": "MC Q109: Which of the following examples is NOT considered a confound in dataset creation?",
+      "options": ["Food images taken with different cameras", "Traffic images taken under different weather conditions", "Clothing images with gender-biased labels", "Language samples recorded with different microphones"],
+      "answer": ["Clothing images with gender-biased labels"]
+    },
+    {
+      "question": "MC Q110: Which method can be used to leverage a pre-trained model for a new image classification task?",
+      "options": ["Freeze feature extraction layers and retrain classification layers", "Use the entire model and retrain the input layer", "Combine the original classification layer with a classical feature extractor", "Select and combine individual layers to form a new model"],
+      "answer": ["Freeze feature extraction layers and retrain classification layers"]
+    },
+    {
+      "question": "MC Q111: What is the correct order of steps to train a neural network using backpropagation and SGD?",
+      "options": ["D → B → C → A → E", "D → C → A → E → B", "D → A → C → E → B", "D → E → A → B → C", "D → B → E → C → A"],
+      "answer": ["D → C → A → E → B"]
+    },
+    {
+      "question": "MC Q112: Which of the following statements about Batch Normalization are true?",
+      "options": ["It normalizes the input distribution for the following layer", "It normalizes the weights of each layer", "It is an effective way of backpropagation", "It has trainable parameters", "It normalizes the entire training dataset using global statistics"],
+      "answer": ["It normalizes the input distribution for the following layer", "It has trainable parameters"]
+    },
+    {
+      "question": "MC Q113: When a model trained on ImageNet is fed a blank white image, what is the expected output?",
+      "options": ["The network outputs the same score for each class", "The network outputs high confidence for one class", "The network outputs random scores", "The network fails to produce an output"],
+      "answer": ["The network outputs the same score for each class"]
+    },
+    {
+      "question": "MC Q114: Which of the following functions do NOT fulfill the requirements for an activation function?",
+      "options": ["tanh(x)", "1/x", "2x", "max(x, 0)", "1/(1+e^{-x})"],
+      "answer": ["1/x", "2x"]
+    },
+    {
+      "question": "MC Q115: Which of the following statements is wrong regarding reinforcement learning methods?",
+      "options": ["A good policy aims to maximize future return", "Bellman equations form a solvable system for small problems", "Q-Learning is off-policy and does not require environment dynamics", "Temporal Difference Learning is on-policy and requires environment dynamics", "Greedy action selection is always optimal"],
+      "answer": ["Temporal Difference Learning is on-policy and requires environment dynamics", "Greedy action selection is always optimal"]
+    },
+    {
+      "question": "MC Q116: Which of the following statements about model capacity are true?",
+      "options": ["It is determined by the number of training samples", "It is linked to the variety of functions that can be approximated", "It is influenced by network depth", "It is unrelated to the bias-variance tradeoff", "The bias increases with increased model capacity"],
+      "answer": ["It is linked to the variety of functions that can be approximated", "It is influenced by network depth"]
+    },
+    {
+      "question": "MC Q117: Which of the following statements about weight and bias initialization are true?",
+      "options": ["Initializing bias with 0 results in zero gradients for bias", "Zero bias initialization helps mitigate the dying ReLU problem", "It is important to calibrate the variance of weights", "Initialization does not affect optimization because the problem is convex"],
+      "answer": ["It is important to calibrate the variance of weights"]
+    },
+    {
+      "question": "MC Q118: Which of the following statements about segmentation are true?",
+      "options": ["The goal of segmentation is to draw a bounding box", "Semantic segmentation is a pixel-wise classification", "A pixel-wise segmentation can be converted into a bounding box", "Instance segmentation can only detect one instance per image"],
+      "answer": ["Semantic segmentation is a pixel-wise classification", "A pixel-wise segmentation can be converted into a bounding box"]
+    },
+    {
+      "question": "MC Q119: What is the relationship between convolution and cross-correlation in deep learning?",
+      "options": ["They are identical operations", "Convolution involves flipping the kernel while cross-correlation does not", "Cross-correlation is a type of convolution", "They are completely unrelated"],
+      "answer": ["Convolution involves flipping the kernel while cross-correlation does not"]
+    },
+    {
+      "question": "MC Q120: What does model capacity refer to in the context of neural networks?",
+      "options": ["The number of parameters in the network", "The ability of a model to fit a wide variety of functions", "The depth of the network", "The computational cost during inference"],
+      "answer": ["The ability of a model to fit a wide variety of functions"]
+    },
+    {
+      "question": "MC Q121: Which of the following factors can lead to internal covariate shift in deep networks?",
+      "options": ["Frequent updates of weights during training", "Changing distribution of layer inputs", "Poor weight initialization", "High dropout rates"],
+      "answer": ["Changing distribution of layer inputs", "Poor weight initialization"]
+    },
+    {
+      "question": "MC Q122: Why are Recurrent Neural Networks (RNNs) suitable for time-series problems?",
+      "options": ["Because they process data sequentially", "Because they have memory to store previous inputs", "Because they ignore the order of data", "Because they use convolution operations"],
+      "answer": ["Because they process data sequentially", "Because they have memory to store previous inputs"]
+    },
+    {
+      "question": "MC Q123: What is the main benefit of using Long Short-Term Memory (LSTM) units over simple RNN cells?",
+      "options": ["They are simpler to compute", "They mitigate the vanishing gradient problem", "They require fewer parameters", "They are faster to train"],
+      "answer": ["They mitigate the vanishing gradient problem"]
+    },
+    {
+      "question": "MC Q124: Which of the following evaluation metrics are specifically used for segmentation tasks?",
+      "options": ["Intersection over Union (IoU)", "Dice coefficient", "Accuracy", "Precision"],
+      "answer": ["Intersection over Union (IoU)", "Dice coefficient"]
+    },
+    {
+      "question": "MC Q125: When visualizing the effects of a convolutional layer, what is typically visualized?",
+      "options": ["The raw input image", "The feature maps (activation maps)", "The gradients of the layer", "The loss values"],
+      "answer": ["The feature maps (activation maps)"]
+    },
+    {
+      "question": "MC Q126: What is one primary benefit of applying a 1x1 convolution in a CNN?",
+      "options": ["Dimensionality reduction", "Increased spatial resolution", "Non-linear activation", "Pooling of features"],
+      "answer": ["Dimensionality reduction"]
+    },
+    {
+      "question": "MC Q127: Why are ReLU activations often preferred over Sigmoid activations in fully connected layers?",
+      "options": ["They help mitigate the vanishing gradient problem", "They are computationally less expensive", "They always produce outputs between 0 and 1", "They introduce non-linearity"],
+      "answer": ["They help mitigate the vanishing gradient problem"]
+    },
+    {
+      "question": "MC Q128: For an input image of size X×X, how many weights does a fully connected layer with Z output neurons require (ignoring biases)?",
+      "options": ["X * X", "Z", "X * X * Z", "X + X + Z"],
+      "answer": ["X * X * Z"]
+    },
+    {
+      "question": "MC Q129: For a convolutional layer with N kernels of size K×K, how many weights are required per kernel (ignoring biases)?",
+      "options": ["K * K", "N * K", "N * K * K", "K + K"],
+      "answer": ["K * K"]
+    },
+    {
+      "question": "MC Q130: What is one disadvantage of using fully connected layers for image classification?",
+      "options": ["They ignore the spatial structure of images", "They use parameter sharing", "They require less memory", "They are less expressive"],
+      "answer": ["They ignore the spatial structure of images"]
+    },
+    {
+      "question": "MC Q131: What is one advantage of convolutional layers over fully connected layers?",
+      "options": ["They exploit spatial hierarchies in data", "They require more parameters", "They ignore local features", "They are slower to compute"],
+      "answer": ["They exploit spatial hierarchies in data"]
+    },
+    {
+      "question": "MC Q132: Which of the following methods can be used to connect the output of a convolutional layer to a fully connected layer?",
+      "options": ["Flattening", "Global average pooling", "Max pooling", "Both Flattening and Global average pooling"],
+      "answer": ["Both Flattening and Global average pooling"]
+    },
+    {
+      "question": "MC Q133: Why is it beneficial to learn a bias term in neural networks?",
+      "options": ["It allows the activation function to shift", "It reduces overfitting", "It increases the number of parameters unnecessarily", "It speeds up training"],
+      "answer": ["It allows the activation function to shift"]
+    },
+    {
+      "question": "MC Q134: In multi-label classification problems, such as classifying multiple diseases, which activation function is more suitable?",
+      "options": ["Sigmoid", "Softmax", "ReLU", "tanh"],
+      "answer": ["Sigmoid"]
+    },
+    {
+      "question": "MC Q135: What is the primary purpose of backpropagation in neural networks?",
+      "options": ["To compute gradients for weight updates", "To initialize weights", "To perform forward propagation", "To calculate the loss"],
+      "answer": ["To compute gradients for weight updates"]
+    },
+    {
+      "question": "MC Q136: What is one key role of a skip connection in a residual network?",
+      "options": ["To allow gradients to flow more easily", "To increase the number of layers", "To add non-linearity", "To reduce the model size"],
+      "answer": ["To allow gradients to flow more easily"]
+    },
+    {
+      "question": "MC Q137: In reinforcement learning, what constitutes an 'action'?",
+      "options": ["A decision taken by the agent", "A reward signal", "The current state", "A parameter update"],
+      "answer": ["A decision taken by the agent"]
+    },
+    {
+      "question": "MC Q138: In reinforcement learning, what is a 'reward'?",
+      "options": ["A numerical feedback signal", "A change in the agent's state", "The policy used by the agent", "A measure of exploration"],
+      "answer": ["A numerical feedback signal"]
+    },
+    {
+      "question": "MC Q139: What is a primary limitation of a greedy action selection algorithm?",
+      "options": ["It only considers immediate rewards", "It is computationally intensive", "It always chooses random actions", "It explores the environment sufficiently"],
+      "answer": ["It only considers immediate rewards"]
+    },
+    {
+      "question": "MC Q140: What does the epsilon greedy policy balance in reinforcement learning?",
+      "options": ["Exploration and exploitation", "Training speed and accuracy", "Memory usage and performance", "Model complexity and interpretability"],
+      "answer": ["Exploration and exploitation"]
+    },
+    {
+      "question": "MC Q141: What does a Markov Decision Process (MDP) model in reinforcement learning?",
+      "options": ["The agent's actions and rewards", "The state transitions and rewards in the environment", "Only the agent's policy", "Only the environmental dynamics"],
+      "answer": ["The state transitions and rewards in the environment"]
+    },
+    {
+      "question": "MC Q142: What is the main idea behind the Nesterov Accelerated Gradient (NAG) optimizer?",
+      "options": ["It looks ahead to compute the gradient", "It uses momentum to accelerate convergence", "It adapts the learning rate based on past gradients", "It uses second-order derivatives"],
+      "answer": ["It looks ahead to compute the gradient", "It uses momentum to accelerate convergence"]
+    },
+    {
+      "question": "MC Q143: What is the purpose of using a ConvTranspose2d layer in a UNet architecture?",
+      "options": ["To perform upsampling", "To perform downsampling", "To reduce the number of channels", "To increase the receptive field"],
+      "answer": ["To perform upsampling"]
+    },
+    {
+      "question": "MC Q144: What is the benefit of concatenating feature maps in a UNet architecture?",
+      "options": ["It merges encoder and decoder features", "It increases the number of parameters", "It reduces the spatial dimensions", "It simplifies the network structure"],
+      "answer": ["It merges encoder and decoder features"]
+    },
+    {
+      "question": "MC Q145: Which activation function is typically used in the output layer for binary classification tasks?",
+      "options": ["Sigmoid", "Softmax", "ReLU", "tanh"],
+      "answer": ["Sigmoid"]
+    },
+    {
+      "question": "MC Q146: Which loss function is most suitable for binary classification problems?",
+      "options": ["Binary Cross Entropy Loss", "Mean Squared Error Loss", "Categorical Cross Entropy Loss", "Hinge Loss"],
+      "answer": ["Binary Cross Entropy Loss"]
+    },
+    {
+      "question": "MC Q147: How is accuracy computed from a confusion matrix?",
+      "options": ["(True Positives + True Negatives) / Total Samples", "True Positives / Total Samples", "False Positives / Total Samples", "True Negatives / Total Samples"],
+      "answer": ["(True Positives + True Negatives) / Total Samples"]
+    },
+    {
+      "question": "MC Q148: What is a potential concern when evaluating model performance on a highly imbalanced dataset?",
+      "options": ["High accuracy may be misleading", "The model may overfit to the majority class", "Precision and recall may be low", "The confusion matrix becomes irrelevant"],
+      "answer": ["High accuracy may be misleading", "The model may overfit to the majority class"]
+    },
+    {
+      "question": "MC Q149: Why might a high accuracy not be sufficient to conclude that a classification problem is solved?",
+      "options": ["Because of class imbalance", "Because of overfitting", "Because accuracy doesn't measure recall", "Because accuracy is always a reliable metric"],
+      "answer": ["Because of class imbalance", "Because of overfitting"]
+    },
+    {
+      "question": "MC Q150: What is the role of the bias term in a neural network?",
+      "options": ["To allow the activation function to shift", "To normalize the input", "To reduce the number of parameters", "To control the learning rate"],
+      "answer": ["To allow the activation function to shift"]
+    },
+    {
+      "question": "MC Q151: Which activation function is used in the network architecture described in the SS2021 backpropagation question?",
+      "options": ["Sigmoid", "ReLU", "tanh", "Softmax"],
+      "answer": ["Sigmoid"]
+    },
+    {
+      "question": "MC Q152: What loss function is used in the network described in the SS2021 backpropagation question?",
+      "options": ["L2 norm (Mean Squared Error)", "Cross Entropy Loss", "Hinge Loss", "L1 norm"],
+      "answer": ["L2 norm (Mean Squared Error)"]
+    },
+    {
+      "question": "MC Q153: What is the general purpose of regularization in deep learning?",
+      "options": ["To prevent overfitting", "To increase training speed", "To improve model interpretability", "To reduce underfitting"],
+      "answer": ["To prevent overfitting"]
+    },
+    {
+      "question": "MC Q154: Which of the following norms are commonly used for weight regularization in deep learning?",
+      "options": ["L1 norm", "L2 norm", "L∞ norm", "Frobenius norm"],
+      "answer": ["L1 norm", "L2 norm"]
+    },
+    {
+      "question": "MC Q155: Which layer is typically added to mitigate internal covariate shift in neural networks?",
+      "options": ["Batch Normalization layer", "Dropout layer", "Pooling layer", "Activation layer"],
+      "answer": ["Batch Normalization layer"]
+    },
+    {
+      "question": "MC Q156: What is the primary purpose of generating saliency maps in deep learning?",
+      "options": ["To visualize important regions in the input", "To reduce the model size", "To augment the dataset", "To initialize weights"],
+      "answer": ["To visualize important regions in the input"]
+    },
+    {
+      "question": "MC Q157: What does multi-task learning in neural networks refer to?",
+      "options": ["Training on additional related tasks to improve the main task", "Using multiple optimizers simultaneously", "Ensembling different models", "Regularizing the network using dropout"],
+      "answer": ["Training on additional related tasks to improve the main task"]
+    },
+    {
+      "question": "MC Q158: What issue does the Exponential Linear Unit (ELU) activation function aim to address?",
+      "options": ["Vanishing gradients", "Overfitting", "Exploding gradients", "Underfitting"],
+      "answer": ["Vanishing gradients"]
+    },
+    {
+      "question": "MC Q159: What is the effect of increasing the padding in a convolutional layer in PyTorch?",
+      "options": ["It preserves spatial dimensions", "It reduces the output size", "It increases the number of parameters", "It decreases computational cost"],
+      "answer": ["It preserves spatial dimensions"]
+    },
+    {
+      "question": "MC Q160: What is the primary function of a fully connected (Linear) layer in a Convolutional Neural Network?",
+      "options": ["To aggregate features and perform classification", "To perform convolution operations", "To reduce overfitting", "To perform pooling"],
+      "answer": ["To aggregate features and perform classification"]
+    },
+    {
+      "question": "MC Q161: Which activation function is most commonly used in modern deep neural networks for hidden layers?",
+      "options": ["ReLU", "Sigmoid", "tanh", "Softmax"],
+      "answer": ["ReLU"]
+    },
+    {
+      "question": "MC Q162: What is the main disadvantage of using Sigmoid activation in deep networks?",
+      "options": ["Vanishing gradient problem", "Exploding gradient problem", "Excessive sparsity", "Non-differentiability"],
+      "answer": ["Vanishing gradient problem"]
+    },
+    {
+      "question": "MC Q163: What does dropout regularization do in a neural network?",
+      "options": ["Randomly drops units during training", "Increases the number of neurons", "Boosts the learning rate", "Normalizes the input data"],
+      "answer": ["Randomly drops units during training"]
+    },
+    {
+      "question": "MC Q164: Which optimizer adapts the learning rate for each parameter based on estimates of first and second moments of the gradients?",
+      "options": ["Adam", "SGD", "NAG", "RMSProp"],
+      "answer": ["Adam"]
+    },
+    {
+      "question": "MC Q165: What is the primary role of the learning rate in gradient descent optimization?",
+      "options": ["To determine the step size during weight updates", "To control the momentum", "To regularize the model", "To normalize the gradients"],
+      "answer": ["To determine the step size during weight updates"]
+    },
+    {
+      "question": "MC Q166: Which of the following are common methods for weight initialization?",
+      "options": ["Xavier/Glorot initialization", "He initialization", "Random initialization", "Zero initialization"],
+      "answer": ["Xavier/Glorot initialization", "He initialization", "Random initialization"]
+    },
+    {
+      "question": "MC Q167: What does 'overfitting' refer to in machine learning?",
+      "options": ["Model performs well on training data but poorly on unseen data", "Model performs poorly on both training and test data", "Model has too few parameters", "Model is too simple"],
+      "answer": ["Model performs well on training data but poorly on unseen data"]
+    },
+    {
+      "question": "MC Q168: Which techniques can be used to reduce overfitting in deep neural networks?",
+      "options": ["Dropout", "Early stopping", "Data augmentation", "Increasing model complexity"],
+      "answer": ["Dropout", "Early stopping", "Data augmentation"]
+    },
+    {
+      "question": "MC Q169: What is transfer learning in deep learning?",
+      "options": ["Using a pre-trained model on a new, related task", "Training a model from scratch", "Ensembling multiple models", "Using data augmentation techniques"],
+      "answer": ["Using a pre-trained model on a new, related task"]
+    },
+    {
+      "question": "MC Q170: What is the primary purpose of data augmentation in training deep neural networks?",
+      "options": ["To artificially expand the training dataset", "To reduce the model complexity", "To improve computational efficiency", "To prevent overfitting"],
+      "answer": ["To artificially expand the training dataset", "To prevent overfitting"]
+    },
+    {
+      "question": "MC Q171: Which of the following are characteristic features of convolutional neural networks (CNNs)?",
+      "options": ["Local connectivity", "Weight sharing", "Fully connected layers", "Invariance to translation"],
+      "answer": ["Local connectivity", "Weight sharing", "Invariance to translation"]
+    },
+    {
+      "question": "MC Q172: What is the role of pooling layers in CNNs?",
+      "options": ["To reduce the spatial dimensions", "To introduce non-linearity", "To combine features", "To prevent overfitting"],
+      "answer": ["To reduce the spatial dimensions", "To combine features"]
+    },
+    {
+      "question": "MC Q173: Which of the following are common types of pooling operations in CNNs?",
+      "options": ["Max pooling", "Average pooling", "Sum pooling", "Min pooling"],
+      "answer": ["Max pooling", "Average pooling"]
+    },
+    {
+      "question": "MC Q174: What is the key idea behind residual networks (ResNets)?",
+      "options": ["Adding shortcut connections", "Using deeper architectures", "Employing dropout", "Using batch normalization"],
+      "answer": ["Adding shortcut connections"]
+    },
+    {
+      "question": "MC Q175: What does 'batch size' refer to in the context of training neural networks?",
+      "options": ["The number of training examples used in one iteration", "The total number of training samples", "The number of layers in the network", "The number of parameters in the model"],
+      "answer": ["The number of training examples used in one iteration"]
+    },
+    {
+      "question": "MC Q176: Which of the following are benefits of using GPUs for deep learning?",
+      "options": ["Parallel processing capabilities", "Faster matrix computations", "Lower energy consumption", "Optimized for deep learning frameworks"],
+      "answer": ["Parallel processing capabilities", "Faster matrix computations", "Optimized for deep learning frameworks"]
+    },
+    {
+      "question": "MC Q177: What is a hyperparameter in machine learning?",
+      "options": ["A parameter set before training", "A parameter learned during training", "The weights of the neural network", "The bias term in the network"],
+      "answer": ["A parameter set before training"]
+    },
+    {
+      "question": "MC Q178: Which of the following are examples of hyperparameters in deep learning models?",
+      "options": ["Learning rate", "Batch size", "Number of epochs", "Weight values"],
+      "answer": ["Learning rate", "Batch size", "Number of epochs"]
+    },
+    {
+      "question": "MC Q179: What does 'gradient descent' refer to in optimization?",
+      "options": ["An algorithm to minimize the loss function", "A method to compute gradients", "A technique for weight initialization", "A strategy for data augmentation"],
+      "answer": ["An algorithm to minimize the loss function"]
+    },
+    {
+      "question": "MC Q180: Which of the following are variations of gradient descent?",
+      "options": ["Stochastic Gradient Descent (SGD)", "Mini-batch Gradient Descent", "Batch Gradient Descent", "Newton's Method"],
+      "answer": ["Stochastic Gradient Descent (SGD)", "Mini-batch Gradient Descent", "Batch Gradient Descent"]
+    },
+    {
+      "question": "MC Q181: What is the purpose of using momentum in gradient descent optimization?",
+      "options": ["To accelerate convergence", "To escape local minima", "To smooth out oscillations", "To adapt the learning rate"],
+      "answer": ["To accelerate convergence", "To smooth out oscillations"]
+    },
+    {
+      "question": "MC Q182: Which of the following methods can help in escaping local minima during training?",
+      "options": ["Momentum", "Learning rate scheduling", "Dropout", "Random initialization"],
+      "answer": ["Momentum", "Learning rate scheduling"]
+    },
+    {
+      "question": "MC Q183: What does the term 'epoch' mean in the context of training machine learning models?",
+      "options": ["One complete pass through the entire training dataset", "A single weight update", "A batch of training samples", "A measure of model performance"],
+      "answer": ["One complete pass through the entire training dataset"]
+    },
+    {
+      "question": "MC Q184: Which of the following techniques are commonly used for model evaluation?",
+      "options": ["Cross-validation", "Hold-out validation", "Bootstrapping", "Gradient descent"],
+      "answer": ["Cross-validation", "Hold-out validation", "Bootstrapping"]
+    },
+    {
+      "question": "MC Q185: What is the purpose of a validation set in machine learning?",
+      "options": ["To tune hyperparameters", "To train the model", "To evaluate model performance during training", "To prevent overfitting"],
+      "answer": ["To tune hyperparameters", "To evaluate model performance during training"]
+    },
+    {
+      "question": "MC Q186: What is transfer learning commonly used for in deep learning?",
+      "options": ["Leveraging pre-trained models for new tasks", "Training models faster", "Reducing model size", "Improving data quality"],
+      "answer": ["Leveraging pre-trained models for new tasks"]
+    },
+    {
+      "question": "MC Q187: Which of the following are common challenges in training deep neural networks?",
+      "options": ["Vanishing gradients", "Overfitting", "Insufficient data", "Model interpretability"],
+      "answer": ["Vanishing gradients", "Overfitting", "Insufficient data"]
+    },
+    {
+      "question": "MC Q188: What is the role of the activation function in a neural network?",
+      "options": ["To introduce non-linearity", "To compute gradients", "To update weights", "To normalize inputs"],
+      "answer": ["To introduce non-linearity"]
+    },
+    {
+      "question": "MC Q189: Which of the following metrics are commonly used to evaluate classification models?",
+      "options": ["Accuracy", "Precision", "Recall", "Mean Squared Error"],
+      "answer": ["Accuracy", "Precision", "Recall"]
+    },
+    {
+      "question": "MC Q190: What does the F1 score represent in classification tasks?",
+      "options": ["The harmonic mean of precision and recall", "The arithmetic mean of precision and recall", "The difference between precision and recall", "The product of precision and recall"],
+      "answer": ["The harmonic mean of precision and recall"]
+    },
+    {
+      "question": "MC Q191: Which of the following are types of loss functions used in deep learning?",
+      "options": ["Mean Squared Error", "Cross Entropy Loss", "Hinge Loss", "Cosine Similarity Loss"],
+      "answer": ["Mean Squared Error", "Cross Entropy Loss", "Hinge Loss"]
+    },
+    {
+      "question": "MC Q192: What is the significance of using a non-linear activation function in hidden layers?",
+      "options": ["It allows the network to learn complex functions", "It reduces the number of parameters", "It makes the network linear", "It speeds up convergence"],
+      "answer": ["It allows the network to learn complex functions"]
+    },
+    {
+      "question": "MC Q193: Which of the following practices can help improve the generalization of a deep learning model?",
+      "options": ["Regularization", "Data augmentation", "Early stopping", "Increasing model capacity"],
+      "answer": ["Regularization", "Data augmentation", "Early stopping"]
+    },
+    {
+      "question": "MC Q194: What does the term 'backpropagation' refer to in neural networks?",
+      "options": ["The process of propagating the error gradient backwards", "The forward pass computation", "Weight initialization", "Data preprocessing"],
+      "answer": ["The process of propagating the error gradient backwards"]
+    },
+    {
+      "question": "MC Q195: Which of the following are advantages of using deep learning over traditional machine learning methods?",
+      "options": ["Automatic feature extraction", "Scalability to large datasets", "High interpretability", "State-of-the-art performance in many tasks"],
+      "answer": ["Automatic feature extraction", "Scalability to large datasets", "State-of-the-art performance in many tasks"]
+    },
+    {
+      "question": "MC Q196: What is the primary challenge of training very deep neural networks?",
+      "options": ["Vanishing gradients", "Excessive computational cost", "Lack of data", "Simple optimization"],
+      "answer": ["Vanishing gradients"]
+    },
+    {
+      "question": "MC Q197: Which of the following factors can affect the convergence of a deep neural network?",
+      "options": ["Learning rate", "Weight initialization", "Batch size", "Activation function"],
+      "answer": ["Learning rate", "Weight initialization", "Batch size", "Activation function"]
+    },
+    {
+      "question": "MC Q198: What is the role of the optimizer in training a neural network?",
+      "options": ["To update the weights based on computed gradients", "To compute the loss", "To initialize the network", "To perform the forward pass"],
+      "answer": ["To update the weights based on computed gradients"]
+    },
+    {
+      "question": "MC Q199: Which of the following are common frameworks used for building deep learning models?",
+      "options": ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
+      "answer": ["TensorFlow", "PyTorch", "Keras"]
+    },
+    {
+      "question": "MC Q200: What is the primary goal of using deep learning in computer vision tasks?",
+      "options": ["To automatically learn hierarchical features from data", "To manually design features", "To reduce computational complexity", "To apply traditional machine learning methods"],
+      "answer": ["To automatically learn hierarchical features from data"]
+    }    
+
   ],
   "shortAnswer": [
     {
